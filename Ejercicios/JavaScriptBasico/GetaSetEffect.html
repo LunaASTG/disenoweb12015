@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GETSET</title>
+	<link rel="stylesheet" href="">
+	<script>
+
+$(document).ready(function(){
+    $("#registrar").click(function(){
+        $("#name").val(function(i, origText){
+            return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+        });
+    });
+
+});
+
+	</script>
+</head>
+<body>
+	
+	<p>Nombre: <input type="text" id="name"></p>
+	<button id="registrar">Registrar</button>
+	<br><br>
+	<div id="impresion" style="width:250px;height:150px;border:solid 1px black;"></div>
+</body>
+</html>

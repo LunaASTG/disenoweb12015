@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<title>Slide</title>
+	<script>
+$(document).ready(function(){
+  $("#boton").click(function(){
+    $("#contenedor").slideToggle("slow");
+  });
+});
+	</script>
+</head>
+<body>
+	<div id="boton" style="width:800px;height:50px;background-color:pink;text-align:center;">Dale aqui</div>
+	<div id="contenedor" style="width:800px;height:800px;background-color:pink;display:none;">
+		
+		<img src="img/love.jpg" alt="">
+
+	</div>
+	
+</body>
+</html>

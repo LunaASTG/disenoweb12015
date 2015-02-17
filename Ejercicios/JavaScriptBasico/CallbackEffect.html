@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Callback</title>
+	<link rel="stylesheet" href="">
+
+	<script>
+	$(document).ready(function(){
+    $("button").click(function(){
+        $("#c1").hide("slow", function(){
+
+            $("#c2").show("slow");
+   		      
+        });
+    });
+});
+	</script>
+</head>
+<body>
+	
+	<button>CUADRADOS</button>
+	<br><br>
+	<div id="c1" style="background:red;height:300px;width:300px;margin:70px;font-color:white;">Soy un cuadrado.</div>
+	<div id="c2" style="background:blue;height:300px;width:300px;display:none;margin:70px;font-color:white;">Soy awesome!!</div>
+</body>
+</html>

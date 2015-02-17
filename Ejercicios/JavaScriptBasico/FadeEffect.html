@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<title>Fade</title>
+	<script>
+
+		$(document).ready(function(){
+ 		 $("#boton").click(function(){
+  		  $("#div1").fadeOut("slow");
+  		  $("#p1").fadeIn();
+ 			});
+		});
+
+	</script>
+</head>
+<body>
+	<button id="boton">Borra esas cajas</button>
+	<br><br>
+	<div id="div1" style="width:80px;height:80px;background-color:red;">
+	
+		<p id="p1"style="color:green;display:none;text-align:center;">Textirijillo</p>
+		
+	</div>
+</body>
+</html>

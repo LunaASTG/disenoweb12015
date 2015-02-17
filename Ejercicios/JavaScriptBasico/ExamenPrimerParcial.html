@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+	<title>Examen Primer Parcial</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	
+	<div class="header">
+		<div class="slider-opacity">
+			<div class="head">
+
+				<h1 class="ventas">VENTAS</h1>
+
+			</div>
+			
+		</div>
+
+	</div>
+
+	<section class="work">
+
+	<div class="area">
+
+		<div class="left-side">
+
+		  <h2>PRODUCTOS</h2>
+
+		 	<div class="list">
+
+				<button class="Producto" id="p1">Producto 1</button>
+				<p class="hide" id="t1">Producto 1</p>
+				<div class="info" id="info1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<button class="Gris" id="b1">Comprar</button>
+				</div>
+
+			</div>
+			<div class="list">
+
+				<button class="Producto" id="p2">Producto 2</button>
+				<p class="hide" id="t2">Producto 2</p>
+				<div class="info" id="info2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<button class="Gris" id="b2">Comprar</button>
+				</div>
+
+			</div>
+			<div class="list">
+
+				<button class="Producto" id="p3">Producto 3</button>
+				<p class="hide" id="t3">Producto 3</p>
+				<div class="info" id="info3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<button class="Gris" id="b3">Comprar</button>
+				</div>
+
+			</div>
+			<div class="list">
+
+				<button class="Producto" id="p4">Producto 4</button>
+				<p class="hide" id="t4">Producto 4</p>
+				<div class="info" id="info4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<button class="Gris" id="b4">Comprar</button>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="right-side">
+
+		 	<h2>PEDIDOS</h2>
+		 	<div class="caja" id="CajaPedido"></div>
+		 	<button class="Gris" id="Pagar">Pagar</button>
+		 	<button class="Gris" id="Cancelar">Cancelar</button>
+		 
+		</div>
+		</div>
+		
+	</section>
+	
+</body>
+	
+	<script type="text/javascript">
+
+$(document).ready(function(){
+
+    $("#p1").click(function(){
+        $("#info1").fadeToggle();
+    });
+
+    $("#p2").click(function(){
+        $("#info2").fadeToggle();
+    });
+
+    $("#p3").click(function(){
+        $("#info3").fadeToggle();
+    });
+
+    $("#p4").click(function(){
+        $("#info4").fadeToggle();
+    });
+
+    $("#b1").click(function(){
+        
+       $("#CajaPedido").append( "-" + $("#t1").text() + "<br>");
+
+    });
+
+    $("#b2").click(function(){
+
+        $("#CajaPedido").append( "-" + $("#t2").text() + "<br>");
+     
+    });
+
+    $("#b3").click(function(){
+    	
+        $("#CajaPedido").append( "-" + $("#t3").text() + "<br>");
+     
+    });
+
+    $("#b4").click(function(){
+    	
+        $("#CajaPedido").append( "-" + $("#t4").text() + "<br>");
+     
+    });
+
+    $("#Pagar").click(function(){
+    	
+        alert("Gracias por tu compra :)");
+     
+    });
+
+    $("#Cancelar").click(function(){
+
+        $("#CajaPedido").empty();
+        
+    });
+
+});
+
+	</script>
+
+</html>

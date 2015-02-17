@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ADD EFFECT</title>
+	<link rel="stylesheet" href="">
+	<script>
+
+	$(document).ready(function(){
+   
+    $("#b1").click(function(){
+        $("div").append( "<img src='img/love.jpg'>" );
+    });
+
+    $("#b2").click(function(){
+        $("div").prepend( '<img src="img/love.jpg">' );
+    });
+});
+	</script>
+</head>
+<body>
+
+	<div id="text">
+		<p>Esto es un textirijillo</p>
+	</div>
+
+	<button id="b1">APPEND</button>
+	<button id="b2">PREPEND</button>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide/Show</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="">
+	<script>
+	$(document).ready(function(){
+  $("#b1").click(function(){
+    $("div").hide();
+  });
+  $("#b2").click(function(){
+    $("div").show();
+  });
+});
+	</script>
+</head>
+<body>
+	
+	<button id="b1">HIDE</button>
+	<br>
+	<button id="b2">SHOW</button>
+	<br><br>
+	<div style="width:100px;height:100px;background-color:green;"></div>
+</body>
+</html>
