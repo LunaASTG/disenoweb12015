@@ -102,6 +102,10 @@ section.work {
 .Gris:hover {
   background-color: #333333;
 }
+#lista {
+  padding: 0;
+  margin: 0;
+}
 .caja {
   text-align: left;
   margin-bottom: 20px;

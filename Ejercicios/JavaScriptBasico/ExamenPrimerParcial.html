@@ -103,7 +103,11 @@
 		<div class="right-side">
 
 		 	<h2>PEDIDOS</h2>
-		 	<div class="caja" id="CajaPedido"></div>
+		 	<div class="caja" id="CajaPedido">
+		 		<ul id="lista">
+		 			
+		 		</ul>
+		 	</div>
 		 	<button class="Gris" id="Pagar">Pagar</button>
 		 	<button class="Gris" id="Cancelar">Cancelar</button>
 		 
@@ -136,25 +140,25 @@ $(document).ready(function(){
 
     $("#b1").click(function(){
         
-       $("#CajaPedido").append( "-" + $("#t1").text() + "<br>");
+       $("#lista").append( "-" + $("#t1").text() + "<br>");
 
     });
 
     $("#b2").click(function(){
 
-        $("#CajaPedido").append( "-" + $("#t2").text() + "<br>");
+        $("#lista").append( "-" + $("#t2").text() + "<br>");
      
     });
 
     $("#b3").click(function(){
     	
-        $("#CajaPedido").append( "-" + $("#t3").text() + "<br>");
+        $("#lista").append( "-" + $("#t3").text() + "<br>");
      
     });
 
     $("#b4").click(function(){
     	
-        $("#CajaPedido").append( "-" + $("#t4").text() + "<br>");
+        $("#lista").append( "-" + $("#t4").text() + "<br>");
      
     });
 
@@ -166,7 +170,7 @@ $(document).ready(function(){
 
     $("#Cancelar").click(function(){
 
-        $("#CajaPedido").empty();
+        $("#lista").empty();
         
     });
 
