@@ -11,7 +11,7 @@
 $(document).ready(function(){
     $("#registrar").click(function(){
         $("#name").val(function(i, origText){
-            return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+             $("#impresion").append("- " + $("#name").val() + "<br>");
         });
     });
 

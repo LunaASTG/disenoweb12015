@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Vega</title>
+	
+
+	<script type="text/javascript" src="../../jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="vegas/jquery.vegas.min.js"></script>
+
+	<script>
+
+	$(function() {
+ 		 $.vegas('slideshow', {
+
+ 		 	backgrounds: [
+  		 	
+  		 	 { src:'img/photo1.jpg', fade:1000 },
+  		 	 { src:'img/photo2.jpg', fade:1000 },
+  		 	 { src:'img/photo3.jpg', fade:1000 },
+
+  		  	]
+ 		 });
+ 		 $.vegas('overlay', {
+ 		  src:'vegas/overlays/13.png'
+ 		 });
+	});
+
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="vegas/jquery.vegas.min.css">
+
+	<style>
+		
+		h1 {
+		color: white;
+		font-size: 90px;
+		text-align: center;
+	}
+
+		.text {
+
+			width: 60%;
+			margin: 0 auto;
+			padding: 20px 30px;
+			background-color: rgba(255,255,255,0.8);
+			border-radius: 5px;
+			line-height: 25px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<h1>LOVE</h1>
+
+	<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	
+</body>
+</html>
