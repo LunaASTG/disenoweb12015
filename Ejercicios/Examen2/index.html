@@ -21,74 +21,6 @@
 	<script type="text/javascript" src="plugins/lightbox/js/scriptaculous.js?load=effects,builder"></script>
 	<script type="text/javascript" src="plugins/lightbox/js/lightbox.js"></script>
 
-	<script>
-
-		$(document).ready(function(){
-
-		$('.thu').each(function(index, el) {
-
-			var $url_imagen = $(this).data('img');
-
-			$(this).css('background-image','url('+ $url_imagen +')');
-			
-		});
-
-		//Animar el inicio de los thumbnails
-
-		$('.thumbnails').animate({marginTop:'0px',opacity: 1}, 1000, 'easeOutCubic');
-
-		//Animar el inicio del div.img
-
-		//$('.container .img').animate({top:'50%',opacity: 1}, 1000, 'easeOutCubic');
-
-		//Evento click
-
-		$('.thu').click(function(event) {
-
-			var $url_imagen = $(this).data('img');
-
-			$('.container .img')
-			.css('opacity','1')
-			.css('top','50%')
-			.css('background-image','url('+ $url_imagen +')')
-			.animate({
-				top: '50%',
-				left: '150%',
-				opacity: 1},
-				1500, 'easeOutCubic', function() {
-				/* stuff to do after animation is complete */
-
-				$(this).click(function(){
- 				   $('img').hide("slow", function(){
-  				      alert("The paragraph is now hidden");
-				    });
-				});
-
-			});;
-
-		});
-
-		(function ($) {
-
-			var handler = $("#tiles li");
-
-			handler.wookmark({
-				autoResize:true,
-				container: $("#main"),
-				offset: 5,
-				outerOffset:10,
-				itemWidth:210
-
-			})
-
-		})(jQuery);
-
-
-	});
-
-
-	</script>
-
 </head>
 <body>
 
@@ -125,4 +57,90 @@
 	</div>
 	
 </body>
+
+	<script>
+
+		$(document).ready(function(){
+
+		$('.thu').each(function(index, el) {
+
+			var $url_imagen = $(this).data('img');
+
+			$(this).css('background-image','url('+ $url_imagen +')');
+			
+		});
+
+		//Animar el inicio de los thumbnails
+
+		$('.thumbnails').animate({marginTop:'0px',opacity: 1}, 9000, 'easeOutCubic');
+
+		$('.thu').click(function(event) {
+
+			var $url_imagen = $(this).data('img');
+
+			$('.container .img')
+<<<<<<< HEAD
+			.css('opacity','1')
+			.css('top','50%')
+			.css('background-image','url('+ $url_imagen +')')
+			.animate({
+				top: '50%',
+				left: '150%',
+				opacity: 1},
+				1500, 'easeOutCubic', function() {
+				/* stuff to do after animation is complete */
+
+				$(this).click(function(){
+ 				   $('img').hide("slow", function(){
+  				      alert("The paragraph is now hidden");
+				    });
+				});
+
+			});;
+=======
+			.css('opacity','0')
+			.css('top','50%')
+			.css('left', '50%')
+			.css('background-image','url('+ $url_imagen +')')
+			.animate({
+				left: '150%',
+				opacity: 1},
+				600, 'easeOutCubic', function() {
+				/* stuff to do after animation is complete */
+
+					$(this).data('img');
+					 $('.container .img')
+						.css('opacity', '0')
+						.css('top','50%')
+						.css('left', '0%')
+						.css('background-image','url('+ $url_imagen +')')
+						.animate({
+							left:'50%',
+							opacity: '1'},
+							600, 'easeInCubic', function() {
+
+				    });
+				});
+
+			});
+>>>>>>> origin/gh-pages
+
+		});
+
+		(function ($) {
+
+			var handler = $("#tiles li");
+
+			handler.wookmark({
+				autoResize:true,
+				container: $("#main"),
+				offset: 5,
+				outerOffset:10,
+				itemWidth:210
+
+			})
+
+		})(jQuery);
+
+	</script>
 </html>
