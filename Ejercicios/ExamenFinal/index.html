@@ -8,9 +8,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/icons/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
-
 	<script type="text/javascript" src="../jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" src="plugins/JInvert/jquery.jInvertScroll.min.js"></script>
+	<link rel="stylesheet" href="plugins/OwlCarousel/owl.carousel.css">
+ 
 	<script type="text/javascript" src="plugins/OwlCarousel/owl.carousel.min.js"></script>
 
 	<script src="plugins/ScrollMagic/js/lib/greensock/TweenMax.min.js"></script>
@@ -44,12 +44,13 @@
 		</div>
 	</header>
 	<div class="clearfix"></div>
-	<div class="content-wrap">
+<div id="owl-example" class="owl-carousel"></div>
+	<div class="horizon" id="owl-example">
 		<div class="content-container" id="P1">
-			<div class="scroll-rigth"><i class="fa fa-caret-left"></i></div>
-			<div class="scroll-left"><i class="fa fa-caret-right"></i></div>
+			<button class="scroll-left"><i class="fa fa-angle-left"></i></button>
+			<button class="scroll-right"><i class="fa fa-angle-right"></i></button>
 			<div class="PrincipalText"></div>
-				<div class="text-container" id="T1">
+				<div class="text-container">
 					<div class="text-head"></div>
 					<div class="text-middle">
 						<p>Es un recinto religioso sede de la arquidiócesis de Morelia de la Iglesia católica en México.
@@ -60,8 +61,75 @@
 					</div>
 					<div class="text-end"></div>
 				</div>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
+	<div class="middle" id="owl-example">
+		<div class="content-container" id="P2">
+			<button class="scroll-left"><i class="fa fa-angle-left"></i></button>
+			<button class="scroll-right"><i class="fa fa-angle-right"></i></button>
+			<div class="Date" id="D1"></div>
+			<div class="PrincipalText">
+				<div class="text-container">
+					<div class="text-head"></div>
+					<div class="text-middle">
+						<h2 id="Black">HISTORIA</h2>
+						<h2 id="White">HISTORIA</h2>
+						<p>Fue diseñado por el arquitecto italiano Vicente Barroso de la Escayola. 
+						<br></br>
+						El día 6 de mayo de 1660 la primera piedra de la construcción fue colocada por el obispo Fray Marcos Ramírez del Prado.</p>
+					</div>
+					<div class="text-end"></div>
+				</div>
+			</div>
+			<div class="Date" id="D2"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="front" id="owl-example">
+		<div class="content-container" id="P3">
+			<button class="scroll-left"><i class="fa fa-angle-left"></i></button>
+			<button class="scroll-right"><i class="fa fa-angle-right"></i></button>
+			<div class="PrincipalText"></div>
+				<div class="text-container">
+					<div class="text-head"></div>
+					<div class="text-middle">
+						<p>Es una construcción de estilo barroco, realizado en cantera rosada que le da un color peculiar y característico. 
+						<br></br>
+						La catedral es la edificación más emblemática y representativa de Morelia dada su altura, ya que cuenta con dos altas torres, que se divisan por todo el valle de la ciudad.
+						<br></br>
+						En su interior este recinto dada su belleza, sonorización acústica y amplio espacio, figura como escenario de diversos eventos artísticos y culturales como el Festival Internacional de Órgano de Morelia, y el Festival Internacional de Música de Morelia.</p>
+					</div>
+					<div class="text-end"></div>
+				</div>
+		</div>
+	</div>
+	<div class="final" id="owl-example">
+		<div class="content-container" id="P4">
+			<button class="scroll-left"><i class="fa fa-angle-left"></i></button>
+			<button class="scroll-right"><i class="fa fa-angle-right"></i></button>
+			<div class="PrincipalText"></div>
+				<div class="text-container">
+					<div class="text-head"></div>
+					<div class="text-middle">
+						<p>Es una construcción de estilo barroco, realizado en cantera rosada que le da un color peculiar y característico. 
+						<br></br>
+						La catedral es la edificación más emblemática y representativa de Morelia dada su altura, ya que cuenta con dos altas torres, que se divisan por todo el valle de la ciudad.
+						<br></br>
+						En su interior este recinto dada su belleza, sonorización acústica y amplio espacio, figura como escenario de diversos eventos artísticos y culturales como el Festival Internacional de Órgano de Morelia, y el Festival Internacional de Música de Morelia.</p>
+					</div>
+					<div class="text-end"></div>
+				</div>
+		</div>
+	</div>
+</div>
+	<script>
+	$(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel();
+ 
+	});
+    </script>
 </body>
 </html>

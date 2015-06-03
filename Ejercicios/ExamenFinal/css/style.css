@@ -1,8 +1,8 @@
+html,
 body {
   background-color: #BED7BB;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 h1,
 h2,
@@ -14,13 +14,24 @@ ul {
   margin: 0;
   padding: 0;
 }
+.content-container {
+  margin: 0 18%;
+  height: 488px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid white;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  font-family: 'Fanwood Text', serif;
+}
 .clearfix {
   clear: both;
 }
 /* HEADER */
 .header-wrap {
-  margin: 0;
-  padding: 0;
   font-family: 'Lato', sans-serif;
 }
 .header-wrap .menu-container {
@@ -28,7 +39,6 @@ ul {
   color: white;
   height: 30px;
   text-align: center;
-  position: relative;
   padding-top: 17px;
   padding-bottom: 17px;
 }
@@ -60,36 +70,42 @@ ul {
 .header-wrap #menu:hover {
   color: #AD8968;
 }
-/*CONTENT 1*/
-.content-wrap {
+/* CONTENT 1 */
+.horizon {
+  margin-top: 3%;
   text-align: center;
-  margin: 0 18%;
-  font-family: 'Fanwood Text', serif;
 }
-.content-wrap .content-container {
-  height: 488px;
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border: 1px solid white;
-  border-radius: 3px;
-  overflow: hidden;
-  text-align: center;
-  position: relative;
-}
-.content-wrap #P1 {
+.horizon #P1 {
   background-image: url(../img/Catedral1.png);
   background-position: center right;
   background-repeat: no-repeat;
   background-position-x: 139%;
 }
-.content-wrap .scroll-rigth {
+.horizon .scroll-left {
+  width: 100px;
+  height: 100px;
   position: absolute;
+  margin: 22% -53%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
 }
-.content-wrap .scroll-left {
+.horizon .scroll-right {
+  width: 100px;
+  height: 100px;
   position: absolute;
+  margin: 22% 43%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
 }
-.content-wrap .PrincipalText {
+.horizon .PrincipalText {
   width: 480px;
   height: 95px;
   margin: 40px 90px;
@@ -97,7 +113,7 @@ ul {
   background-image: url(../img/Head.png);
   background-repeat: no-repeat;
 }
-.content-wrap .text-container {
+.horizon .text-container {
   width: 380px;
   height: 265px;
   margin: 16% 128px;
@@ -105,23 +121,158 @@ ul {
   background-image: url(../img/TextBox.png);
   background-repeat: no-repeat;
 }
-.content-wrap .text-head {
+.horizon .text-head {
   width: 158px;
   height: 33px;
   margin: 0 27%;
   background-image: url(../img/Adorno1.png);
   background-repeat: no-repeat;
 }
-.content-wrap .text-middle {
+.horizon .text-middle {
   color: #201815;
   font-size: 16px;
   font-weight: 400;
   margin-top: -10px;
 }
-.content-wrap .text-end {
+.horizon .text-end {
   width: 158px;
   height: 33px;
   margin: -12px 27%;
+  background-image: url(../img/Adorno2.png);
+  background-repeat: no-repeat;
+}
+/* CONTENT 2 */
+.middle {
+  margin-top: 3%;
+  text-align: center;
+}
+.middle #P2 {
+  background-image: url(../img/Catedral1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.middle .scroll-left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% -53%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+.middle .scroll-right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% 43%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+.middle .PrincipalText {
+  width: 213px;
+  height: 95px;
+  margin: 28px 39%;
+  position: absolute;
+  color: #201815;
+  font-size: 16px;
+  font-weight: 400;
+}
+.middle .text-middle #Black {
+  position: absolute;
+  top: -3px;
+  font-size: 48px;
+}
+.middle .text-middle #White {
+  font-size: 48px;
+  color: white;
+}
+.middle .Date {
+  position: absolute;
+  top: 65%;
+}
+.middle #D1 {
+  background-image: url(../img/Date1.png);
+  background-repeat: no-repeat;
+  left: 10%;
+  width: 130px;
+  height: 125px;
+}
+.middle #D2 {
+  background-image: url(../img/Date2.png);
+  background-repeat: no-repeat;
+  right: 10%;
+  width: 130px;
+  height: 125px;
+}
+/* CONTENT 3 */
+.front {
+  margin-top: 3%;
+  text-align: center;
+}
+.front #P3 {
+  background-image: url(../img/Catedral1.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-position-x: -39%;
+}
+.front .scroll-left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% -53%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+.front .scroll-right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% 43%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+.front .text-container {
+  width: 380px;
+  height: 352px;
+  float: right;
+  margin: 5% 165px;
+  padding: 15px;
+  background-image: url(../img/TextBox2.png);
+  background-repeat: no-repeat;
+}
+.front .text-head {
+  width: 158px;
+  height: 33px;
+  margin: 0 27%;
+  background-image: url(../img/Adorno1.png);
+  background-repeat: no-repeat;
+}
+.front .text-middle {
+  color: #201815;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -5px;
+  margin-right: 16px;
+}
+.front .text-end {
+  width: 158px;
+  height: 33px;
+  margin: 2px 27%;
   background-image: url(../img/Adorno2.png);
   background-repeat: no-repeat;
 }
