@@ -48,14 +48,22 @@
 			var $url_imagen = $(this).data('img');
 
 			$('.container .img')
-			.css('opacity','0')
-			.css('top','-30px')
+			.css('opacity','1')
+			.css('top','50%')
 			.css('background-image','url('+ $url_imagen +')')
 			.animate({
 				top: '50%',
+				left: '150%',
 				opacity: 1},
-				300, 'easeOutCubic', function() {
+				1500, 'easeOutCubic', function() {
 				/* stuff to do after animation is complete */
+
+				$(this).click(function(){
+ 				   $('img').hide("slow", function(){
+  				      alert("The paragraph is now hidden");
+				    });
+				});
+
 			});;
 
 		});
@@ -72,13 +80,6 @@
 				itemWidth:210
 
 			})
-
-			/**handler.click(function(){
-
-				var newHeight = $("img", this).height() + Math.round(Math.random() * 300 + 30);
-				$(this).css("height", newHeight+"px");
-				handler.wookmark();
-				})**/
 
 		})(jQuery);
 
