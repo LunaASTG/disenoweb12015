@@ -14,6 +14,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+span {
+  font-size: 24px;
+}
 .content-container {
   margin: 0 18%;
   height: 488px;
@@ -42,13 +45,13 @@ ul {
   padding-top: 17px;
   padding-bottom: 17px;
 }
-.header-wrap li {
+.header-wrap #li-menu {
   color: white;
   display: inline-block;
   text-decoration: none;
   margin: 0 55px 0 0;
 }
-.header-wrap li:last-child {
+.header-wrap #li-menu:last-child {
   margin: 0;
 }
 .header-wrap #logoID {
@@ -71,41 +74,13 @@ ul {
   color: #AD8968;
 }
 /* CONTENT 1 */
-.horizon {
-  margin-top: 3%;
-  text-align: center;
-}
-.horizon #P1 {
+#Page1 #P1 {
   background-image: url(../img/Catedral1.png);
   background-position: center right;
   background-repeat: no-repeat;
   background-position-x: 139%;
 }
-.horizon .scroll-left {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 22% -53%;
-  background-color: white;
-  color: #2F2E2F;
-  border: none;
-  font-size: 90px;
-  opacity: 0.7;
-  border-radius: 80px;
-}
-.horizon .scroll-right {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 22% 43%;
-  background-color: white;
-  color: #2F2E2F;
-  border: none;
-  font-size: 90px;
-  opacity: 0.7;
-  border-radius: 80px;
-}
-.horizon .PrincipalText {
+#Page1 .page-header {
   width: 480px;
   height: 95px;
   margin: 40px 90px;
@@ -113,7 +88,7 @@ ul {
   background-image: url(../img/Head.png);
   background-repeat: no-repeat;
 }
-.horizon .text-container {
+#Page1 .text-container {
   width: 380px;
   height: 265px;
   margin: 16% 128px;
@@ -121,20 +96,20 @@ ul {
   background-image: url(../img/TextBox.png);
   background-repeat: no-repeat;
 }
-.horizon .text-head {
+#Page1 .text-head {
   width: 158px;
   height: 33px;
   margin: 0 27%;
   background-image: url(../img/Adorno1.png);
   background-repeat: no-repeat;
 }
-.horizon .text-middle {
+#Page1 .text-middle {
   color: #201815;
   font-size: 16px;
   font-weight: 400;
   margin-top: -10px;
 }
-.horizon .text-end {
+#Page1 .text-end {
   width: 158px;
   height: 33px;
   margin: -12px 27%;
@@ -142,69 +117,41 @@ ul {
   background-repeat: no-repeat;
 }
 /* CONTENT 2 */
-.middle {
-  margin-top: 3%;
-  text-align: center;
-}
-.middle #P2 {
+#Page2 #P2 {
   background-image: url(../img/Catedral1.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
-.middle .scroll-left {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 22% -53%;
-  background-color: white;
-  color: #2F2E2F;
-  border: none;
-  font-size: 90px;
-  opacity: 0.7;
-  border-radius: 80px;
-}
-.middle .scroll-right {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 22% 43%;
-  background-color: white;
-  color: #2F2E2F;
-  border: none;
-  font-size: 90px;
-  opacity: 0.7;
-  border-radius: 80px;
-}
-.middle .PrincipalText {
+#Page2 .principal-text {
   width: 213px;
   height: 95px;
-  margin: 28px 39%;
+  margin: 18px 39%;
   position: absolute;
   color: #201815;
   font-size: 16px;
   font-weight: 400;
 }
-.middle .text-middle #Black {
+#Page2 .text-middle #black {
   position: absolute;
   top: -3px;
   font-size: 48px;
 }
-.middle .text-middle #White {
+#Page2 .text-middle #white {
   font-size: 48px;
   color: white;
 }
-.middle .Date {
+#Page2 .date {
   position: absolute;
   top: 65%;
 }
-.middle #D1 {
+#Page2 #D1 {
   background-image: url(../img/Date1.png);
   background-repeat: no-repeat;
   left: 10%;
   width: 130px;
   height: 125px;
 }
-.middle #D2 {
+#Page2 #D2 {
   background-image: url(../img/Date2.png);
   background-repeat: no-repeat;
   right: 10%;
@@ -273,6 +220,73 @@ ul {
   width: 158px;
   height: 33px;
   margin: 2px 27%;
+  background-image: url(../img/Adorno2.png);
+  background-repeat: no-repeat;
+}
+/* CONTAINER 4 */
+.final {
+  margin-top: 3%;
+  text-align: center;
+}
+.final #P4 {
+  background-image: url(../img/Catedral3.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.final #P4:hover {
+  background-image: url(../img/Catedral4.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.final .scroll-left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% -53%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+.final .scroll-right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% 43%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+.final .text-container {
+  width: 570px;
+  height: 150px;
+  margin: 3% 20%;
+  padding: 15px;
+  background-image: url(../img/TextBox3.png);
+  background-repeat: no-repeat;
+}
+.final .text-head {
+  width: 158px;
+  height: 33px;
+  margin: -3px 37%;
+  background-image: url(../img/Adorno1.png);
+  background-repeat: no-repeat;
+}
+.final .text-middle {
+  color: #201815;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+.final .text-end {
+  width: 158px;
+  height: 33px;
+  margin: -10px 37%;
   background-image: url(../img/Adorno2.png);
   background-repeat: no-repeat;
 }

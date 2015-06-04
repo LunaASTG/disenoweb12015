@@ -8,6 +8,9 @@ h1,h2,h3,h4,h5,h6,ul {
 	margin: 0;
 	padding: 0;
 }
+span {
+	font-size: 24px;
+}
 .content-container {
 	margin: 0 18%;
 	height: 488px;
@@ -36,13 +39,13 @@ h1,h2,h3,h4,h5,h6,ul {
 		padding-top: 17px;
 		padding-bottom: 17px;
 	}
-	li {
+	#li-menu {
 		color: white;
 		display: inline-block;
 		text-decoration: none;
 		margin: 0 55px 0 0;
 	}
-	li:last-child{
+	#li-menu:last-child{
 		margin:0;
 	}
 	#logoID {
@@ -66,9 +69,7 @@ h1,h2,h3,h4,h5,h6,ul {
 	}
 }
 /* CONTENT 1 */
-.horizon {
-	margin-top: 3%;
-	text-align:center;
+#Page1 {
 
 	#P1 {
 		background-image: url(../img/Catedral1.png);
@@ -76,31 +77,7 @@ h1,h2,h3,h4,h5,h6,ul {
 		background-repeat: no-repeat;
 		background-position-x: 139%;
 	}
-	.scroll-left {
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		margin: 22% -53%;
-		background-color: white;
-		color: #2F2E2F;
-		border: none;
-		font-size: 90px;
-		opacity: 0.7;
-		border-radius: 80px;
-	}
-	.scroll-right {
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		margin: 22% 43%;
-		background-color: white;
-		color: #2F2E2F;
-		border: none;
-		font-size: 90px;
-		opacity: 0.7;
-		border-radius: 80px;
-	}
-	.PrincipalText {
+	.page-header {
 		width: 480px;
 		height: 95px;
 		margin: 40px 90px;
@@ -138,44 +115,17 @@ h1,h2,h3,h4,h5,h6,ul {
 	}
 }
 /* CONTENT 2 */
-.middle {
-	margin-top: 3%;
-	text-align:center;
+#Page2 {
 
 	#P2 {
 		background-image: url(../img/Catedral1.png);
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
-
-	.scroll-left {
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		margin: 22% -53%;
-		background-color: white;
-		color: #2F2E2F;
-		border: none;
-		font-size: 90px;
-		opacity: 0.7;
-		border-radius: 80px;
-	}
-	.scroll-right {
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		margin: 22% 43%;
-		background-color: white;
-		color: #2F2E2F;
-		border: none;
-		font-size: 90px;
-		opacity: 0.7;
-		border-radius: 80px;
-	}	
-	.PrincipalText {
+	.principal-text {
 		width: 213px;
 		height: 95px;
-		margin: 28px 39%;
+		margin: 18px 39%;
 		position: absolute;
 		color: #201815;
 		font-size: 16px;
@@ -183,17 +133,17 @@ h1,h2,h3,h4,h5,h6,ul {
 	}
 	.text-middle {
 
-		#Black {
+		#black {
 		position: absolute;
 		top: -3px;
 		font-size: 48px;
 		}
-		#White {
+		#white {
 			font-size: 48px;
 			color: white;
 		}
 	}
-	.Date {
+	.date {
 		position: absolute;
 		top: 65%;
 	}
@@ -276,6 +226,74 @@ h1,h2,h3,h4,h5,h6,ul {
 		width: 158px;
 		height: 33px;
 		margin: 2px 27%;
+		background-image: url(../img/Adorno2.png);
+		background-repeat: no-repeat;
+	}
+}
+/* CONTAINER 4 */
+.final {
+	margin-top: 3%;
+	text-align:center;
+
+	#P4 {
+		background-image: url(../img/Catedral3.png);
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	#P4:hover{
+		background-image: url(../img/Catedral4.png);
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.scroll-left {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		margin: 22% -53%;
+		background-color: white;
+		color: #2F2E2F;
+		border: none;
+		font-size: 90px;
+		opacity: 0.7;
+		border-radius: 80px;
+	}
+	.scroll-right {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		margin: 22% 43%;
+		background-color: white;
+		color: #2F2E2F;
+		border: none;
+		font-size: 90px;
+		opacity: 0.7;
+		border-radius: 80px;
+	}
+	.text-container {
+		width: 570px;
+		height: 150px;
+		margin: 3% 20%;
+		padding: 15px;
+		background-image: url(../img/TextBox3.png);
+		background-repeat: no-repeat;
+	}
+	.text-head {
+		width: 158px;
+		height: 33px;
+		margin: -3px 37%;
+		background-image: url(../img/Adorno1.png);
+		background-repeat: no-repeat;
+	}
+	.text-middle {
+		color: #201815;
+		font-size: 16px;
+		font-weight: 400;
+		margin-top: -5px;
+	}
+	.text-end {
+		width: 158px;
+		height: 33px;
+		margin: -10px 37%;
 		background-image: url(../img/Adorno2.png);
 		background-repeat: no-repeat;
 	}
