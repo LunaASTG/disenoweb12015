@@ -3,6 +3,7 @@ body {
 	background-color: #BED7BB;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 h1,h2,h3,h4,h5,h6,ul {	
 	margin: 0;
@@ -104,7 +105,7 @@ span {
 		color: #201815;
 		font-size: 16px;
 		font-weight: 400;
-		margin-top: -10px;
+		margin-top: -15px;
 	}
 	.text-end {
 		width: 158px;
@@ -165,7 +166,7 @@ span {
 }
 
 /* CONTENT 3 */
-.front {
+#Page3 {
 	margin-top: 3%;
 	text-align:center;
 
@@ -231,7 +232,7 @@ span {
 	}
 }
 /* CONTAINER 4 */
-.final {
+#Page4 {
 	margin-top: 3%;
 	text-align:center;
 
@@ -244,30 +245,6 @@ span {
 		background-image: url(../img/Catedral4.png);
 		background-position: bottom center;
 		background-repeat: no-repeat;
-	}
-	.scroll-left {
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		margin: 22% -53%;
-		background-color: white;
-		color: #2F2E2F;
-		border: none;
-		font-size: 90px;
-		opacity: 0.7;
-		border-radius: 80px;
-	}
-	.scroll-right {
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		margin: 22% 43%;
-		background-color: white;
-		color: #2F2E2F;
-		border: none;
-		font-size: 90px;
-		opacity: 0.7;
-		border-radius: 80px;
 	}
 	.text-container {
 		width: 570px;
@@ -297,4 +274,69 @@ span {
 		background-image: url(../img/Adorno2.png);
 		background-repeat: no-repeat;
 	}
+}
+#Page5 {
+
+	#photos {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.galery {
+		display: inline-block;
+	}
+
+	li {
+		margin-right: 22%;
+		margin-top: 18px;
+		margin-bottom: 13%;
+		padding: 0;
+	}
+
+	img {
+		width: 20%;
+		position: absolute;
+		height: 27%;
+		border: 5px solid white;
+	}
+}
+footer {
+
+	background-color: #2F2E2F;
+		color: white;
+		height: 30px;
+		text-align: center;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		font-family: 'Lato', sans-serif;
+
+		h4 {
+			width: 30%;
+			height: 35%;
+			padding: 5px;
+			background-color: #AD8968;
+			border-radius: 12px;
+			margin-left: 35%;
+		}
+		.redes {
+			width: 30%;
+			height: 35%;
+			padding: 5px;
+			background-color: #fff;
+			border-radius: 12px;
+			margin-left: 35%;
+			text-align: center;
+
+			a {
+				color: #2F2E2F;
+				font-size: 20px;
+				margin-right: 5px;
+				text-decoration: none;
+			}
+
+			a.last-child {
+				margin-right: 0;
+			}
+		}
 }

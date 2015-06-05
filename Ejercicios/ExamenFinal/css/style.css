@@ -3,6 +3,7 @@ body {
   background-color: #BED7BB;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 h1,
 h2,
@@ -107,7 +108,7 @@ span {
   color: #201815;
   font-size: 16px;
   font-weight: 400;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 #Page1 .text-end {
   width: 158px;
@@ -159,17 +160,17 @@ span {
   height: 125px;
 }
 /* CONTENT 3 */
-.front {
+#Page3 {
   margin-top: 3%;
   text-align: center;
 }
-.front #P3 {
+#Page3 #P3 {
   background-image: url(../img/Catedral1.png);
   background-position: center left;
   background-repeat: no-repeat;
   background-position-x: -39%;
 }
-.front .scroll-left {
+#Page3 .scroll-left {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -181,7 +182,7 @@ span {
   opacity: 0.7;
   border-radius: 80px;
 }
-.front .scroll-right {
+#Page3 .scroll-right {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -193,7 +194,7 @@ span {
   opacity: 0.7;
   border-radius: 80px;
 }
-.front .text-container {
+#Page3 .text-container {
   width: 380px;
   height: 352px;
   float: right;
@@ -202,21 +203,21 @@ span {
   background-image: url(../img/TextBox2.png);
   background-repeat: no-repeat;
 }
-.front .text-head {
+#Page3 .text-head {
   width: 158px;
   height: 33px;
   margin: 0 27%;
   background-image: url(../img/Adorno1.png);
   background-repeat: no-repeat;
 }
-.front .text-middle {
+#Page3 .text-middle {
   color: #201815;
   font-size: 16px;
   font-weight: 400;
   margin-top: -5px;
   margin-right: 16px;
 }
-.front .text-end {
+#Page3 .text-end {
   width: 158px;
   height: 33px;
   margin: 2px 27%;
@@ -224,45 +225,21 @@ span {
   background-repeat: no-repeat;
 }
 /* CONTAINER 4 */
-.final {
+#Page4 {
   margin-top: 3%;
   text-align: center;
 }
-.final #P4 {
+#Page4 #P4 {
   background-image: url(../img/Catedral3.png);
   background-position: bottom center;
   background-repeat: no-repeat;
 }
-.final #P4:hover {
+#Page4 #P4:hover {
   background-image: url(../img/Catedral4.png);
   background-position: bottom center;
   background-repeat: no-repeat;
 }
-.final .scroll-left {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 22% -53%;
-  background-color: white;
-  color: #2F2E2F;
-  border: none;
-  font-size: 90px;
-  opacity: 0.7;
-  border-radius: 80px;
-}
-.final .scroll-right {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: 22% 43%;
-  background-color: white;
-  color: #2F2E2F;
-  border: none;
-  font-size: 90px;
-  opacity: 0.7;
-  border-radius: 80px;
-}
-.final .text-container {
+#Page4 .text-container {
   width: 570px;
   height: 150px;
   margin: 3% 20%;
@@ -270,23 +247,78 @@ span {
   background-image: url(../img/TextBox3.png);
   background-repeat: no-repeat;
 }
-.final .text-head {
+#Page4 .text-head {
   width: 158px;
   height: 33px;
   margin: -3px 37%;
   background-image: url(../img/Adorno1.png);
   background-repeat: no-repeat;
 }
-.final .text-middle {
+#Page4 .text-middle {
   color: #201815;
   font-size: 16px;
   font-weight: 400;
   margin-top: -5px;
 }
-.final .text-end {
+#Page4 .text-end {
   width: 158px;
   height: 33px;
   margin: -10px 37%;
   background-image: url(../img/Adorno2.png);
   background-repeat: no-repeat;
+}
+#Page5 #photos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#Page5 .galery {
+  display: inline-block;
+}
+#Page5 li {
+  margin-right: 22%;
+  margin-top: 18px;
+  margin-bottom: 13%;
+  padding: 0;
+}
+#Page5 img {
+  width: 20%;
+  position: absolute;
+  height: 27%;
+  border: 5px solid white;
+}
+footer {
+  background-color: #2F2E2F;
+  color: white;
+  height: 30px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'Lato', sans-serif;
+}
+footer h4 {
+  width: 30%;
+  height: 35%;
+  padding: 5px;
+  background-color: #AD8968;
+  border-radius: 12px;
+  margin-left: 35%;
+}
+footer .redes {
+  width: 30%;
+  height: 35%;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-left: 35%;
+  text-align: center;
+}
+footer .redes a {
+  color: #2F2E2F;
+  font-size: 20px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+footer .redes a.last-child {
+  margin-right: 0;
 }
