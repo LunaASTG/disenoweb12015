@@ -1,0 +1,18 @@
+Fecha de entrega: 27 de mayo 2015 (completo);
+Criterios de Evaluación: Creatividad, Buena fotografía o Diseño, Plugins de Jquery (min 3) y Wireframes.
+
+FOTOGRAFÍA;
+NOMBRE;
+FECHA DE CREACIÓN;
+HISTORIA DE SU CONTRUCCIÓN;
+CARACTERÍSTICAS;
+COMPARACIONES;
+
+Jquiery
+
+ScrollMagic
+JinvertScroll
+Parallax
+scrollToBySpeed
+
+ 

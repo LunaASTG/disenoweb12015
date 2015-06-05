@@ -1,0 +1,324 @@
+html,
+body {
+  background-color: #BED7BB;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+span {
+  font-size: 24px;
+}
+.content-container {
+  margin: 0 18%;
+  height: 488px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid white;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  font-family: 'Fanwood Text', serif;
+}
+.clearfix {
+  clear: both;
+}
+/* HEADER */
+.header-wrap {
+  font-family: 'Lato', sans-serif;
+}
+.header-wrap .menu-container {
+  background-color: #2F2E2F;
+  color: white;
+  height: 30px;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.header-wrap #li-menu {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 55px 0 0;
+}
+.header-wrap #li-menu:last-child {
+  margin: 0;
+}
+.header-wrap #logoID {
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  margin-right: 90%;
+}
+.header-wrap #logoID:hover {
+  color: #AD8968;
+}
+.header-wrap #menu {
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.header-wrap #menu:hover {
+  color: #AD8968;
+}
+/* CONTENT 1 */
+#Page1 #P1 {
+  background-image: url(../img/Catedral1.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-position-x: 139%;
+}
+#Page1 .page-header {
+  width: 480px;
+  height: 95px;
+  margin: 40px 90px;
+  position: absolute;
+  background-image: url(../img/Head.png);
+  background-repeat: no-repeat;
+}
+#Page1 .text-container {
+  width: 380px;
+  height: 265px;
+  margin: 16% 128px;
+  padding: 15px;
+  background-image: url(../img/TextBox.png);
+  background-repeat: no-repeat;
+}
+#Page1 .text-head {
+  width: 158px;
+  height: 33px;
+  margin: 0 27%;
+  background-image: url(../img/Adorno1.png);
+  background-repeat: no-repeat;
+}
+#Page1 .text-middle {
+  color: #201815;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -15px;
+}
+#Page1 .text-end {
+  width: 158px;
+  height: 33px;
+  margin: -12px 27%;
+  background-image: url(../img/Adorno2.png);
+  background-repeat: no-repeat;
+}
+/* CONTENT 2 */
+#Page2 #P2 {
+  background-image: url(../img/Catedral1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#Page2 .principal-text {
+  width: 213px;
+  height: 95px;
+  margin: 18px 39%;
+  position: absolute;
+  color: #201815;
+  font-size: 16px;
+  font-weight: 400;
+}
+#Page2 .text-middle #black {
+  position: absolute;
+  top: -3px;
+  font-size: 48px;
+}
+#Page2 .text-middle #white {
+  font-size: 48px;
+  color: white;
+}
+#Page2 .date {
+  position: absolute;
+  top: 65%;
+}
+#Page2 #D1 {
+  background-image: url(../img/Date1.png);
+  background-repeat: no-repeat;
+  left: 10%;
+  width: 130px;
+  height: 125px;
+}
+#Page2 #D2 {
+  background-image: url(../img/Date2.png);
+  background-repeat: no-repeat;
+  right: 10%;
+  width: 130px;
+  height: 125px;
+}
+/* CONTENT 3 */
+#Page3 {
+  margin-top: 3%;
+  text-align: center;
+}
+#Page3 #P3 {
+  background-image: url(../img/Catedral1.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-position-x: -39%;
+}
+#Page3 .scroll-left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% -53%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+#Page3 .scroll-right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 22% 43%;
+  background-color: white;
+  color: #2F2E2F;
+  border: none;
+  font-size: 90px;
+  opacity: 0.7;
+  border-radius: 80px;
+}
+#Page3 .text-container {
+  width: 380px;
+  height: 352px;
+  float: right;
+  margin: 5% 165px;
+  padding: 15px;
+  background-image: url(../img/TextBox2.png);
+  background-repeat: no-repeat;
+}
+#Page3 .text-head {
+  width: 158px;
+  height: 33px;
+  margin: 0 27%;
+  background-image: url(../img/Adorno1.png);
+  background-repeat: no-repeat;
+}
+#Page3 .text-middle {
+  color: #201815;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -5px;
+  margin-right: 16px;
+}
+#Page3 .text-end {
+  width: 158px;
+  height: 33px;
+  margin: 2px 27%;
+  background-image: url(../img/Adorno2.png);
+  background-repeat: no-repeat;
+}
+/* CONTAINER 4 */
+#Page4 {
+  margin-top: 3%;
+  text-align: center;
+}
+#Page4 #P4 {
+  background-image: url(../img/Catedral3.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+#Page4 #P4:hover {
+  background-image: url(../img/Catedral4.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+#Page4 .text-container {
+  width: 570px;
+  height: 150px;
+  margin: 3% 20%;
+  padding: 15px;
+  background-image: url(../img/TextBox3.png);
+  background-repeat: no-repeat;
+}
+#Page4 .text-head {
+  width: 158px;
+  height: 33px;
+  margin: -3px 37%;
+  background-image: url(../img/Adorno1.png);
+  background-repeat: no-repeat;
+}
+#Page4 .text-middle {
+  color: #201815;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+#Page4 .text-end {
+  width: 158px;
+  height: 33px;
+  margin: -10px 37%;
+  background-image: url(../img/Adorno2.png);
+  background-repeat: no-repeat;
+}
+#Page5 #photos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#Page5 .galery {
+  display: inline-block;
+}
+#Page5 li {
+  margin-right: 22%;
+  margin-top: 18px;
+  margin-bottom: 13%;
+  padding: 0;
+}
+#Page5 img {
+  width: 20%;
+  position: absolute;
+  height: 27%;
+  border: 5px solid white;
+}
+footer {
+  background-color: #2F2E2F;
+  color: white;
+  height: 30px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'Lato', sans-serif;
+}
+footer h4 {
+  width: 30%;
+  height: 35%;
+  padding: 5px;
+  background-color: #AD8968;
+  border-radius: 12px;
+  margin-left: 35%;
+}
+footer .redes {
+  width: 30%;
+  height: 35%;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-left: 35%;
+  text-align: center;
+}
+footer .redes a {
+  color: #2F2E2F;
+  font-size: 20px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+footer .redes a.last-child {
+  margin-right: 0;
+}
